@@ -1,0 +1,6 @@
+devel_space: /home/zyk/all_example/example_ws/devel
+install: false
+install_space: /home/zyk/all_example/example_ws/install
+profile: default
+source_space: /home/zyk/all_example/example_ws/src
+workspace: /home/zyk/all_example/example_ws

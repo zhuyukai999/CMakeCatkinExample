@@ -1,0 +1,5 @@
+Linked: (/home/zyk/all_example/example_ws/devel/.private/catkin_example1/share/catkin_example1/cmake/catkin_example1Config.cmake, /home/zyk/all_example/example_ws/devel/share/catkin_example1/cmake/catkin_example1Config.cmake)
+Linked: (/home/zyk/all_example/example_ws/devel/.private/catkin_example1/share/catkin_example1/cmake/catkin_example1Config-version.cmake, /home/zyk/all_example/example_ws/devel/share/catkin_example1/cmake/catkin_example1Config-version.cmake)
+Symlinking /home/zyk/all_example/example_ws/devel/lib/libcatkin_example1_core.so
+Linked: (/home/zyk/all_example/example_ws/devel/.private/catkin_example1/lib/pkgconfig/catkin_example1.pc, /home/zyk/all_example/example_ws/devel/lib/pkgconfig/catkin_example1.pc)
+Symlinking /home/zyk/all_example/example_ws/devel/lib/catkin_example1/catkin_example1

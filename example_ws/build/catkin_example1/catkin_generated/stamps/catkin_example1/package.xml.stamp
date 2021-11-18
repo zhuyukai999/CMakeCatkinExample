@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>catkin_example1</name>
+  <version>0.0.0</version>
+  <description>The catkin_example1 package</description>
+  <maintainer email="zyk@todo.todo">zyk</maintainer>
+
+  <license>TODO</license>
+  <!--<author email="zyk@todo.todo">zyk</author>-->
+
+  <!-- buildtool_depend: dependencies of the build process -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <!-- build_depend: dependencies only used in source files -->
+  <build_depend>boost</build_depend>
+  <!-- depend: build, export, and execution dependency -->
+  <depend>eigen</depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>image_transport</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_geometry</depend>
+
+</package>

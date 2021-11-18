@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: catkin_example1
+Description: Description of catkin_example1
+Version: 0.0.0
+Cflags: -I${prefix}/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib -lcatkin_example1_core
+Requires: roscpp std_msgs image_transport cv_bridge
