@@ -9,15 +9,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #通过添加 -Wall 和 -Werror，编译器不再忽略警告，强制执行更干净的代码。
 add_definitions(-Wall -Werror)
 
-#[[
-CMake 会自动找到依赖的头文件，因此不需要特别指定，
-当头文件修改的时候，会重新编译依赖它的目标文件。
-#]]
 add_executable(example1 main.cpp OtherFile.cpp)
 
 #[[
 使用如下命令构建本项目：
-    cmake -B build      # 生成构建目录
-    cmake --build build # 执行构建
-    ./build/example1      # 运行 example1 程序
+#[[
+使用如下命令构建本项目：
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ./example1
+#]]
 #]]

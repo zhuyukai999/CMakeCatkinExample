@@ -1,0 +1,16 @@
+Cleaning: (/home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example/cmake.lock, /home/zyk/CMakeCatkinExample/example_ws/devel/./cmake.lock)
+Cleaning: (/home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example/share/catkin_example/cmake/catkin_exampleConfig.cmake, /home/zyk/CMakeCatkinExample/example_ws/devel/share/catkin_example/cmake/catkin_exampleConfig.cmake)
+Cleaning: (/home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example/share/catkin_example/cmake/catkin_exampleConfig-version.cmake, /home/zyk/CMakeCatkinExample/example_ws/devel/share/catkin_example/cmake/catkin_exampleConfig-version.cmake)
+Cleaning: (/home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example/lib/libcatkin_example_core.so, /home/zyk/CMakeCatkinExample/example_ws/devel/lib/libcatkin_example_core.so)
+Cleaning: (/home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example/lib/pkgconfig/catkin_example.pc, /home/zyk/CMakeCatkinExample/example_ws/devel/lib/pkgconfig/catkin_example.pc)
+Cleaning: (/home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example/lib/catkin_example/catkin_example, /home/zyk/CMakeCatkinExample/example_ws/devel/lib/catkin_example/catkin_example)
+Unlinking: /home/zyk/CMakeCatkinExample/example_ws/devel/share/catkin_example/cmake/catkin_exampleConfig.cmake
+Already unlinked: {}
+Unlinking: /home/zyk/CMakeCatkinExample/example_ws/devel/share/catkin_example/cmake/catkin_exampleConfig-version.cmake
+Already unlinked: {}
+Unlinking: /home/zyk/CMakeCatkinExample/example_ws/devel/lib/libcatkin_example_core.so
+Already unlinked: {}
+Unlinking: /home/zyk/CMakeCatkinExample/example_ws/devel/lib/pkgconfig/catkin_example.pc
+Already unlinked: {}
+Unlinking: /home/zyk/CMakeCatkinExample/example_ws/devel/lib/catkin_example/catkin_example
+Already unlinked: {}

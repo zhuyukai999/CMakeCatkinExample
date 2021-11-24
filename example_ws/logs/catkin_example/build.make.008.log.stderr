@@ -1,0 +1,15 @@
+In file included from [01m[K/home/zyk/CMakeCatkinExample/example_ws/src/catkin_example/src/ExampleOne.cpp:4:0[m[K:
+[01m[K/home/zyk/CMakeCatkinExample/example_ws/src/catkin_example/include/example_head_file/ExampleOne.h:5:10:[m[K [01;31m[Kfatal error: [m[Kcv.hpp: 没有那个文件或目录
+ #include [01;31m[K<cv.hpp>[m[K
+          [01;31m[K^~~~~~~~[m[K
+In file included from [01m[K/home/zyk/CMakeCatkinExample/example_ws/src/catkin_example/src/ExampleTwo.cpp:4:0[m[K:
+[01m[K/home/zyk/CMakeCatkinExample/example_ws/src/catkin_example/include/example_head_file/ExampleTwo.h:5:10:[m[K [01;31m[Kfatal error: [m[Kcv.hpp: 没有那个文件或目录
+ #include [01;31m[K<cv.hpp>[m[K
+          [01;31m[K^~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+make[2]: *** [CMakeFiles/catkin_example_core.dir/src/ExampleOne.cpp.o] Error 1
+make[2]: *** 正在等待未完成的任务....
+make[2]: *** [CMakeFiles/catkin_example_core.dir/src/ExampleTwo.cpp.o] Error 1
+make[1]: *** [CMakeFiles/catkin_example_core.dir/all] Error 2
+make: *** [all] Error 2

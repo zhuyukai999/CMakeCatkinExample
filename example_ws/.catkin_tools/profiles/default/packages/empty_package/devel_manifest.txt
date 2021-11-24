@@ -1,0 +1,5 @@
+empty_package
+/home/zyk/CMakeCatkinExample/example_ws/devel/.private/empty_package/cmake.lock /home/zyk/CMakeCatkinExample/example_ws/devel/./cmake.lock
+/home/zyk/CMakeCatkinExample/example_ws/devel/.private/empty_package/share/empty_package/cmake/empty_packageConfig-version.cmake /home/zyk/CMakeCatkinExample/example_ws/devel/share/empty_package/cmake/empty_packageConfig-version.cmake
+/home/zyk/CMakeCatkinExample/example_ws/devel/.private/empty_package/share/empty_package/cmake/empty_packageConfig.cmake /home/zyk/CMakeCatkinExample/example_ws/devel/share/empty_package/cmake/empty_packageConfig.cmake
+/home/zyk/CMakeCatkinExample/example_ws/devel/.private/empty_package/lib/pkgconfig/empty_package.pc /home/zyk/CMakeCatkinExample/example_ws/devel/lib/pkgconfig/empty_package.pc

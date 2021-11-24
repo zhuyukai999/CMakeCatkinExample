@@ -1,0 +1,4 @@
+[ 25%] [32m[1mLinking CXX shared library /home/zyk/CMakeCatkinExample/example_ws/devel/.private/usb_cam/lib/libusb_cam.so[0m
+[ 50%] Built target usb_cam
+[ 75%] [32m[1mLinking CXX executable /home/zyk/CMakeCatkinExample/example_ws/devel/.private/usb_cam/lib/usb_cam/usb_cam_node[0m
+[100%] Built target usb_cam_node

@@ -1,10 +1,10 @@
-#include "OtherFile/OtherFile.hpp"
+#include "OtherFile/OtherFile.h"
 
 namespace OtherFile {
 
 std::vector<int> getValue() {
-  int aaa = getAnotherValue();
-      std::vector<int> bbb = {aaa,aaa,aaa};
-        return bbb;
+  auto value1 = getAnotherValue();
+      std::vector<int> value2 = {value1, value1, value1};
+        return value2;
     }
 } // namespace answer

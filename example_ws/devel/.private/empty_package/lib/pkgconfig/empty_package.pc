@@ -1,0 +1,8 @@
+prefix=/home/zyk/CMakeCatkinExample/example_ws/devel/.private/empty_package
+
+Name: empty_package
+Description: Description of empty_package
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -28,7 +28,9 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE HELLO="${HELLO}")
 
 #[[
 使用如下命令构建本项目：
-    cmake -B build -DHELLO=XXX          # 生成构建目录（建议更换 HELLO）
-    cmake --build build                 # 执行构建
-    ./build/example5                    # 运行 answer_app 程序
+    mkdir build
+    cd build
+    cmake .. -DHELLO=XXX
+    make
+    ./example5
 #]]

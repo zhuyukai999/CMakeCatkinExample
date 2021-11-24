@@ -1,0 +1,8 @@
+prefix=/home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example
+
+Name: catkin_example
+Description: Description of catkin_example
+Version: 0.0.0
+Cflags: -I/home/zyk/CMakeCatkinExample/example_ws/src/catkin_example/include
+Libs: -L${prefix}/lib -lcatkin_example_core
+Requires: roscpp

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example/setup.sh

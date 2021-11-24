@@ -1,6 +1,5 @@
 #include <iostream>
-
-#include "OtherFile/OtherFile.hpp"
+#include "OtherFile/OtherFile.h"
 
 int main(int argc, const char *argv[]) {
     std::vector<int> final_answer = OtherFile::getValue();

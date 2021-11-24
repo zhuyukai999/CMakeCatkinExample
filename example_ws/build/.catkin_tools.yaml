@@ -1,6 +1,6 @@
-devel_space: /home/zyk/all_example/example_ws/devel
+devel_space: /home/zyk/CMakeCatkinExample/example_ws/devel
 install: false
-install_space: /home/zyk/all_example/example_ws/install
+install_space: /home/zyk/CMakeCatkinExample/example_ws/install
 profile: default
-source_space: /home/zyk/all_example/example_ws/src
-workspace: /home/zyk/all_example/example_ws
+source_space: /home/zyk/CMakeCatkinExample/example_ws/src
+workspace: /home/zyk/CMakeCatkinExample/example_ws

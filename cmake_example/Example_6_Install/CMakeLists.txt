@@ -3,43 +3,62 @@ cmake_minimum_required(VERSION 3.10)
 # 设置项目名称
 project(example6)
 
-add_executable(${PROJECT_NAME} main.cpp OtherFile.cpp)
-
-add_library(${PROJECT_NAME}_core main.cpp OtherFile.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
 include_directories(include)
+
+add_library(libanswer OtherFile.cpp)
+
+target_link_libraries(${PROJECT_NAME} libanswer)
 
 
 
 # Mark executables and/or libraries for installation
 install(
-        TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_core
-        ARCHIVE DESTINATION lib/example6
-        LIBRARY DESTINATION lib/example6
-        RUNTIME DESTINATION bin/example6
+        TARGETS libanswer
+        ARCHIVE DESTINATION lib
+        LIBRARY DESTINATION lib
+        RUNTIME DESTINATION bin
 )
 
 # Mark cpp header files for installation
 install(
         DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/otherfile
-        DESTINATION include/example6
+        DESTINATION include
         FILES_MATCHING PATTERN "*.h"
 )
 
 # Mark other files for installation
 install(
         DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/doc
-        DESTINATION share/example6
+        DESTINATION share
 )
 
+#[[install(
+        EXPORT libanswer_target
+        FILE libanswerConfig.cmake
+        DESTINATION lib/cmake/libanswer)
 
-#[[install(TARGETS ${PROJECT_NAME}_core DESTINATION lib/example6)
-install(FILES ${HEAD_FILES} DESTINATION include/example6)]]
+include(CMakePackageConfigHelpers)
 
+configure_package_config_file(
+        libanswerConfig.cmake.in ${PROJECT_BINARY_DIR}/libanswerConfig.cmake
+        INSTALL_DESTINATION lib/cmake/libanswer)
+
+write_basic_package_version_file(
+        libanswerConfigVersion.cmake
+        VERSION ${PACKAGE_VERSION}
+        COMPATIBILITY SameMajorVersion)
+
+install(FILES "${PROJECT_BINARY_DIR}/libanswerConfig.cmake"
+        "${PROJECT_BINARY_DIR}/libanswerConfigVersion.cmake"
+        DESTINATION lib/cmake/libanswer)]]
 
 #[[
 使用如下命令构建本项目：
-    cmake ..      # 生成构建目录
-    sudo make install # 执行构建
+    mkdir build
+    cd build
+    cmake ..
+    sudo make install
 #]]
 

@@ -11,6 +11,8 @@ add_subdirectory(Folder)
 
 add_executable(${PROJECT_NAME} main.cpp)
 
+add_dependencies(${PROJECT_NAME} libanswer)
+
 target_link_libraries(${PROJECT_NAME} libanswer)
 
 #[[
@@ -18,13 +20,18 @@ message 可用于打印调试信息或错误信息，除了 STATUS
 外还有 DEBUG WARNING SEND_ERROR FATAL_ERROR 等。
 #]]
 
-message(STATUS "libanswer_INCLUDE_DIRS: $ENV{libanswer_INCLUDE_DIRS}")
-include_directories($ENV{libanswer_INCLUDE_DIRS})
+#message(STATUS "Second message: $ENV{libanswer_INCLUDE_DIRS}")
+#include_directories($ENV{libanswer_INCLUDE_DIRS})
+
+message(STATUS "Second message: ${libanswer_INCLUDE_DIRS}")
+include_directories(${libanswer_INCLUDE_DIRS})
 
 #[[
 使用如下命令构建本项目：
 
-    cmake -B build      # 生成构建目录
-    cmake --build build # 执行构建
-    ./build/example3  # 运行 example3 程序
+    mkdir build
+    cd build
+    cmake ..
+    make
+    ./example3
 #]]

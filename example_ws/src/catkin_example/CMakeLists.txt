@@ -14,16 +14,11 @@ find_package(catkin REQUIRED
     COMPONENTS
     roscpp
     std_msgs
-    roslint
-        image_transport
-        cv_bridge
-        image_geometry
+    image_geometry
     )
 
 ## Find system libraries
-find_package(Eigen3 REQUIRED)
 find_package(OpenCV REQUIRED)
-find_package(Boost REQUIRED)
 
 ###################################
 ## catkin specific configuration ##
@@ -37,22 +32,14 @@ find_package(Boost REQUIRED)
 catkin_package(
     INCLUDE_DIRS
     include
-    ## This is only necessary because Eigen3 sets a non-standard EIGEN3_INCLUDE_DIR variable
-    ${EIGEN3_INCLUDE_DIR}
     LIBRARIES
     ${PROJECT_NAME}_core
     CATKIN_DEPENDS
     roscpp
     std_msgs
-    image_transport
-    cv_bridge
+    image_geometry
     DEPENDS
-    ## find_package(Eigen3) provides a non standard EIGEN3_INCLUDE_DIR instead of Eigen3_INCLUDE_DIRS.
-    ## Therefore, the DEPEND does not work as expected and we need to add the directory to the INCLUDE_DIRS
-    # Eigen3
-
-    ## Boost is not part of the DEPENDS since it is only used in source files,
-    ## Dependees do not depend on Boost when they depend on this package.
+    OpenCV
 )
 
 ###########
@@ -64,10 +51,6 @@ catkin_package(
 include_directories(
     include
     ${catkin_INCLUDE_DIRS}
-    # Set manually because Eigen sets a non standard INCLUDE DIR
-    ${EIGEN3_INCLUDE_DIR}
-    # Set because Boost is an internal dependency, not transitive.
-    ${Boost_INCLUDE_DIRS}
 )
 
 ## Declare a cpp library
@@ -85,7 +68,7 @@ target_compile_features(${PROJECT_NAME} INTERFACE cxx_std_11)
 add_dependencies(${PROJECT_NAME}_core
     ${catkin_EXPORTED_TARGETS}
     )
-
+MESSAGE(STATUS "${catkin_EXPORTED_TARGETS}")
 add_dependencies(${PROJECT_NAME}
     ${catkin_EXPORTED_TARGETS}
     )
@@ -132,7 +115,7 @@ install(
 set(CATKIN_ENABLE_TESTING OFF)
 MESSAGE(STATUS "CATKIN_ENABLE_TESTING:${CATKIN_ENABLE_TESTING}")]]
 if (${CATKIN_ENABLE_TESTING})
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+  #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
   ## Add gtest based cpp test target and link libraries
   catkin_add_gtest(${PROJECT_NAME}-test
       test/Test_1.cpp

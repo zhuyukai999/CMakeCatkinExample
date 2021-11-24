@@ -1,0 +1,1 @@
+/home/zyk/CMakeCatkinExample/example_ws/devel/.private/catkin_example/lib/pkgconfig/catkin_example.pc

@@ -1,0 +1,1 @@
+/home/zyk/CMakeCatkinExample/example_ws/devel/.private/empty_package/lib/pkgconfig/empty_package.pc

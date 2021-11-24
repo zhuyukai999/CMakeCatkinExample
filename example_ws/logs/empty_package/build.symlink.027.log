@@ -1,0 +1,3 @@
+Symlinking /home/zyk/CMakeCatkinExample/example_ws/devel/share/empty_package/cmake/empty_packageConfig-version.cmake
+Symlinking /home/zyk/CMakeCatkinExample/example_ws/devel/share/empty_package/cmake/empty_packageConfig.cmake
+Symlinking /home/zyk/CMakeCatkinExample/example_ws/devel/lib/pkgconfig/empty_package.pc
